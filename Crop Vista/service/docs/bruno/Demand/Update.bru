@@ -1,0 +1,26 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/demands
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "companyId": "",
+    "crop": "",
+    "quantity": 2000,
+    "timeline": 30,
+    "createdDate": "2024-08-01"
+  }
+}

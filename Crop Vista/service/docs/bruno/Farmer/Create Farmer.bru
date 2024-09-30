@@ -1,0 +1,36 @@
+meta {
+  name: Create Farmer
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/farmers
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "profile": {
+      "name": "Best Farmer",
+      "email": "best_farmer@email.com",
+      "address": {
+        "street1": "27 Gandhi Nagar",
+        "street2": "",
+        "city": "Jaipur",
+        "state": "RJ",
+        "zip": "302015",
+        "country": "India"
+      }
+    },
+    "area": 100,
+    "productionCapacity": 1400
+  }
+  
+}

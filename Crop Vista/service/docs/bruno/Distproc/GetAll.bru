@@ -1,0 +1,20 @@
+meta {
+  name: GetAll
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/distprocs?distributorId=66b12ac17810fdb4048f9c46&status.$ne=Completed
+  body: none
+  auth: none
+}
+
+params:query {
+  distributorId: 66b12ac17810fdb4048f9c46
+  status.$ne: Completed
+}
+
+headers {
+  Accept: application/json
+}

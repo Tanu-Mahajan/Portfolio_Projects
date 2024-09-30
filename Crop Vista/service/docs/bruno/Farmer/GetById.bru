@@ -1,0 +1,19 @@
+meta {
+  name: GetById
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/farmers
+  body: none
+  auth: none
+}
+
+params:query {
+  ~fid: id
+}
+
+headers {
+  Accept: application/json
+}

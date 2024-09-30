@@ -1,0 +1,19 @@
+meta {
+  name: GetAll
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/distoffers?status
+  body: none
+  auth: none
+}
+
+params:query {
+  status: 
+}
+
+headers {
+  Accept: application/json
+}

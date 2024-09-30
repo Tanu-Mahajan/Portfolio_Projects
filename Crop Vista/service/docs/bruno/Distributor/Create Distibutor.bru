@@ -1,0 +1,42 @@
+meta {
+  name: Create Distibutor
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/distributors
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "profile": {
+      "name": "CropConnect",
+      "email": "contact@cropconnect.com",
+      "address": {
+        "street1": "8080 Farm Road",
+        "street2": "",
+        "city": "Harvest City",
+        "state": "WA",
+        "zip": "98001",
+        "country": "USA"
+      }
+    },
+    "inventoryCapacity": 9000,
+    "shippingAddress": {
+      "street1": "9090 Supply Street",
+      "street2": "",
+      "city": "Growtown",
+      "state": "WA",
+      "zip": "98002",
+      "country": "USA"
+    }
+  }
+}

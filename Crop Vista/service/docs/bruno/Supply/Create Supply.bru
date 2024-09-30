@@ -1,0 +1,25 @@
+meta {
+  name: Create Supply
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/supplies
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "farmerId": "66aeb8bcc62827a2f1a40bb9",
+    "cropId": "66ac0b80721c59c0b67c8e1d",
+    "quantity": 1000,
+    "timeline": 30
+  }
+}

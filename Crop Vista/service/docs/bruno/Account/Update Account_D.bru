@@ -1,0 +1,23 @@
+meta {
+  name: Update Account_D
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/accounts/66aea665977129cf59e7ce3c
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "child": "66aeb2f5c62827a2f1a40b89"
+  }
+  
+}

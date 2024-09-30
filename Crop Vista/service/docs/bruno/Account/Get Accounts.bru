@@ -1,0 +1,20 @@
+meta {
+  name: Get Accounts
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/accounts?username=harvesthavenadmin&password=pass@cropConnect
+  body: none
+  auth: none
+}
+
+params:query {
+  username: harvesthavenadmin
+  password: pass@cropConnect
+}
+
+headers {
+  Accept: application/json
+}

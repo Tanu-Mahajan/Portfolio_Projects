@@ -1,0 +1,56 @@
+meta {
+  name: Add
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/distoffers
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "distributorId": "",
+    "companyId": "",
+    "companyInitDemand": {
+      "companyId": {
+        "billingAddress": {
+          "street1": "456 Corporate Blvd",
+          "street2": "Suite 300",
+          "city": "Business City",
+          "state": "Corporate State",
+          "zip": "67890",
+          "country": "USA"
+        },
+        "shippingAddress": {
+          "street1": "789 Warehouse Rd",
+          "street2": "",
+          "city": "Shipping Town",
+          "state": "Logistics State",
+          "zip": "11223",
+          "country": "USA"
+        }
+      },
+      "crop": {
+        "name": "Wheat",
+        "grade": "A"
+      },
+      "quantity": 1000,
+      "timeline": 30,
+      "createdDate": "2024-08-01"
+    },
+    "cropId": "",
+    "distQuote": 1500,
+    "companyQuote": 1200,
+    "iAgreeDist": true,
+    "iAgreeCompany": false
+  }
+  
+}

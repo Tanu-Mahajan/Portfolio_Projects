@@ -1,0 +1,24 @@
+meta {
+  name: Create Crop
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/crops
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "name": "Wheat",
+    "grade": "A"
+  }
+  
+}

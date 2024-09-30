@@ -1,0 +1,38 @@
+meta {
+  name: Update Company
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/companies
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "billingAddress": {
+      "street1": "456 Corporate Blvd",
+      "street2": "Suite 300",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "67890",
+      "country": "USA"
+    },
+    "shippingAddress": {
+      "street1": "789 Warehouse Rd",
+      "street2": "",
+      "city": "New Haven",
+      "state": "CT",
+      "zip": "11223",
+      "country": "USA"
+    }
+  }
+  
+}

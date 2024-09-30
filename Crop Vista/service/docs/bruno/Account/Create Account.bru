@@ -1,0 +1,26 @@
+meta {
+  name: Create Account
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/accounts
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "username": "testuser",
+    "password": "testuser",
+    "role": "distributor",
+    "child": "66aee14ac62827a2f1a40c1c"
+  }
+  
+}

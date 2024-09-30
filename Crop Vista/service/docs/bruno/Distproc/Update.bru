@@ -1,0 +1,29 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/distprocs
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "distributorId": "",
+    "farmerId": "",
+    "cropId": "",
+    "distQuote": 2000,
+    "farmerQuote": 1400,
+    "iAgreeDist": true,
+    "iAgreeFarmer": false
+  }
+  
+}

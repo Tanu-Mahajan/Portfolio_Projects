@@ -1,0 +1,41 @@
+meta {
+  name: Create Company
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/companies
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "profile": {
+      "name": "Marico Limited",
+      "email": "info@marico.com",
+      "address": {
+        "street1": "Marico Limited",
+        "street2": "Sapphire, Off Western Express Highway",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zip": "400099",
+        "country": "India"
+      }
+    },
+    "shippingAddress": {
+      "street1": "Marico Limited",
+      "street2": "Plot No. 1, Marico Industrial Estate",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "zip": "400093",
+      "country": "India"
+    }
+  }
+}

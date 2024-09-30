@@ -1,0 +1,23 @@
+meta {
+  name: Update Farmer
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/farmers
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "area": 100.0,
+    "productionCapacity": 20000.0
+  }
+}

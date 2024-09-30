@@ -1,0 +1,39 @@
+meta {
+  name: Update Distributor
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/distributors
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+    "inventoryCapacity": 5000.0,
+    "billingAddress": {
+      "street1": "123 Industrial Ave",
+      "street2": "Unit 45",
+      "city": "New Jersey",
+      "state": "NY",
+      "zip": "54321",
+      "country": "USA"
+    },
+    "shippingAddress": {
+      "street1": "987 Distribution Blvd",
+      "street2": "Dock 2",
+      "city": "Harrisburg",
+      "state": "PA",
+      "zip": "67890",
+      "country": "USA"
+    }
+  }
+  
+}
