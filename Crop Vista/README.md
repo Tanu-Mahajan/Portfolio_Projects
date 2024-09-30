@@ -4,15 +4,6 @@ Effective Crop Management System
 # Description:
 The idea proposes to provide a digital solution, to bring the farmers, MNCs and distributors on the same platform enabling transparency and effective prduction and usage of produced crops. This will also enable farmers in reducing crop wastage by taking informed decisions for crop production which will be in line with the forecasted demand.
 
-# Team Members:
-- Aakash Chothani (chothani.aa@northeastern.edu)
-- Mann Patel (patel.mannb@northeastern.edu)
-- Sagar Satra (satra.sa@northeastern.edu)
-- Tanuja Mahajan (mahajan.t@northeastern.edu)
-
-# Video Recording:
-[Link](https://northeastern-my.sharepoint.com/personal/chothani_aa_northeastern_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fchothani%5Faa%5Fnortheastern%5Fedu%2FDocuments%2FRecordings%2FMeeting%20in%20Web%20Dev%20project%20%2D%20Code%20Harvesters%2D20240811%5F210525%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E29a7c372%2Dd224%2D4911%2Dbe33%2D0a48702e578d&ga=1)
-
 # Object Model:
 ```mermaid
 classDiagram
